@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    div{
+        padding: 5px;
+        padding-left: 10px;
+    }
+
+    #box{
+        border: 2px solid black;
+        padding: 5px;
+        width: 25%;
+        border-collapse: collapse;
+    }
+
+    input{
+        padding: 3px;
+    }
+</style>
+<body>
+    <div id="box">
+    <div>Masukkan Angka: </div>
+    <div><input type="text" id="input"></div>
+    <div><button onclick="kuadrat()">Kuadratkan!</button></div>
+    </div>
+
+    <div id="hasil"></div>
+
+    <script>
+    const kuadrat = () => {
+        let input = parseInt(document.getElementById('input').value)
+        document.getElementById('hasil').innerHTML= 'Hasil ' + input +
+        '<sup>2</sup>' + ' adalah ' + Math.pow(input,2)
+    }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Program Kuadrat</title>
+</head>
+
+<style>
+div{
+    padding: 5px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+</style>
+
+<body>
+    <div id="box">
+    <h1>Program Kuadrat</h1>
+    <div>Masukkan Angka</div>
+    <input type="text" id="angka">
+    <div><button onclick="kuadrat()">Kuadratkan!</button></div>
+    </div>
+
+    <div style="font-weight: bold; font-size: 20px"  id="hasil"></div>
+
+
+    <script>
+    let kuadrat=() =>{
+        let angka = parseInt(document.getElementById('angka').value)
+        document.getElementById('hasil').innerHTML='Hasil ' + angka + '<sup>2</sup> = ' + Math.pow(angka,2)
+        return
+    }
+    
+    </script>
+</body>
+</html>
